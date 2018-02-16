@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.css">
+  <style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+  :root{
+    --color1:#0093E9;
+    --color2:#80D0C7;
+  }
+body {
+  background-color: #FFFFFF;
+}
+
+.top.padding {
+  margin-top: 2rem;
+}
+
+.main.menu {
+  margin-top: 4em;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  transition: box-shadow 0.5s ease, padding 0.5s ease;
+}
+
+.main.menu.fixed {
+  background-color: #FFFFFF;
+  border: 1px solid #DDD;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header.name.item {
+  padding-left: 0px;
+}
+
+.break {
+  margin: 50px 0;
+}
+
+.break.twenty {
+  margin: 20px 0;
+}
+.ui.container{
+  padding-left:10px;
+}
+.bg-gradient{
+  background-image: -webkit-linear-gradient(160deg, var(--color1) 0%, var(--color2) 100%);
+  background-image: -moz-linear-gradient(160deg, var(--color1) 0%, var(--color2) 100%);
+  background-image: -o-linear-gradient(160deg, var(--color1) 0%, var(--color2) 100%);
+  background-image: linear-gradient(160deg, var(--color1) 0%, var(--color2) 100%);
+}
+
+svg path {
+    fill:#0093E9
+}
+
+.hero {
+  width: 100%;
+  height: 400px;
+  background-color: #0093E9;
+
+  background-size: cover;
+  font-family: 'Lora', serif !important;
+  color: white;
+  text-align: center;
+  padding-top: 90px;
+}
+
+.hero .header {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.hero .caption {
+  font-size: 20px;
+  margin-top: 20px;
+  width: 50%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.hero.ui.button {
+  margin-top: 20px;
+}
+
+.button.blue{background-color:#0093E9;color:white;border-radius: 500px;}
+  </style>
+</head>
+
+<body>
+  <!-- MAIN MENU -->
+  <div class="top padding ui borderless main menu bar">
+    <div class="top padding ui container">
+      <div href="#" class="header name item"> writedaily.co</div>
+      <a href="#" class="disabled item" open>Publication</a>
+      <a href="#" class="disabled item">About</a>
+      <!-- DROPDOWN -->
+      <div class="right menu">
+        <a href="#" class="item">Sign up</a>
+      </div>
+    </div>
+  </div>
+  <!-- END MAIN MENU -->
+  <!-- MAIN -->
+  <div class="hero bg-gradient">
+    <div ><h1 class='header'>Make writing a habit</h1></div>
+    <div class="caption">Join hundreds of other writers on a 7 day challenge to write to a prompt every day. </div>
+    <br>
+    <button class="ui large  button blue">Get started</button>
+  </div>
+
+
+  <div class="ui container">
+
+
+  </div>
+  <!-- END MAIN -->
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js"></script>
+  <script src='js/scripts.js'></script>
+</body>
+
+</html>
