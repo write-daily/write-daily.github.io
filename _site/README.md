@@ -1,2 +1,2 @@
-# daily-prompts
+# WriteDaily.co
 Daily writing prompts.

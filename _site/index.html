@@ -2,120 +2,116 @@
 <html>
 
 <head>
-  <title></title>
+  <title>WriteDaily</title>
+  <link rel="icon" type="image/png" href="/img/wd_logo.png">
+  <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.css">
-  <style type="text/css">
-  @import url('https://fonts.googleapis.com/css?family=Lora:400,700');
-  :root{
-    --color1:#0093E9;
-    --color2:#80D0C7;
-  }
-body {
-  background-color: #FFFFFF;
-}
-
-.top.padding {
-  margin-top: 2rem;
-}
-
-.main.menu {
-  margin-top: 4em;
-  border-radius: 0;
-  border: none;
-  box-shadow: none;
-  transition: box-shadow 0.5s ease, padding 0.5s ease;
-}
-
-.main.menu.fixed {
-  background-color: #FFFFFF;
-  border: 1px solid #DDD;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-}
-
-.header.name.item {
-  padding-left: 0px;
-}
-
-.break {
-  margin: 50px 0;
-}
-
-.break.twenty {
-  margin: 20px 0;
-}
-.ui.container{
-  padding-left:10px;
-}
-.bg-gradient{
-  background-image: -webkit-linear-gradient(160deg, var(--color1) 0%, var(--color2) 100%);
-  background-image: -moz-linear-gradient(160deg, var(--color1) 0%, var(--color2) 100%);
-  background-image: -o-linear-gradient(160deg, var(--color1) 0%, var(--color2) 100%);
-  background-image: linear-gradient(160deg, var(--color1) 0%, var(--color2) 100%);
-}
-
-svg path {
-    fill:#0093E9
-}
-
-.hero {
-  width: 100%;
-  height: 400px;
-  background-color: #0093E9;
-
-  background-size: cover;
-  font-family: 'Lora', serif !important;
-  color: white;
-  text-align: center;
-  padding-top: 90px;
-}
-
-.hero .header {
-  font-weight: bold;
-  font-size: 3rem;
-}
-
-.hero .caption {
-  font-size: 20px;
-  margin-top: 20px;
-  width: 50%;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-.hero.ui.button {
-  margin-top: 20px;
-}
-
-.button.blue{background-color:#0093E9;color:white;border-radius: 500px;}
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
   <!-- MAIN MENU -->
-  <div class="top padding ui borderless main menu bar">
-    <div class="top padding ui container">
-      <div href="#" class="header name item"> writedaily.co</div>
-      <a href="#" class="disabled item" open>Publication</a>
-      <a href="#" class="disabled item">About</a>
+  <div class="top padding ui fixed borderless main menu bar">
+    <div class=" ui container" style='padding-top:10px;padding-bottom:10px;'>
+      <div id='hero-button' href="#" class="header name item"> WriteDaily</div>
+      <div id='about-button' class="item">About</div>
+      <div id='pub-button' href="#" class="item" open>Publications</div>
       <!-- DROPDOWN -->
       <div class="right menu">
-        <a href="#" class="item">Sign up</a>
+        <a href="#" class="item" id='signup'>Sign up</a>
       </div>
     </div>
   </div>
   <!-- END MAIN MENU -->
   <!-- MAIN -->
-  <div class="hero bg-gradient">
-    <div ><h1 class='header'>Make writing a habit</h1></div>
-    <div class="caption">Join hundreds of other writers on a 7 day challenge to write to a prompt every day. </div>
-    <br>
-    <button class="ui large  button blue">Get started</button>
+  <div class="hero bg-gradient" style='margin-top:50px' id='hero'>
+
+    <div class="ui two column doubling stackable grid container">
+      <div class="column" style='text-align:center'>
+        <div class='center-justify'>
+        <div><h1 class='header'>Make writing a habit</h1></div>
+        <div class="caption">Join hundreds of other writers on a 7 day challenge to write to a prompt every day. </div>
+      </div>
+      </div>
+      <div class="column" style='text-align:left;'>
+        <center>
+        <div class="ui card" style='text-align:left;'>
+          <form class="ui form" style='margin:10px;' id='signup-form'>
+            <div class="field">
+              <label style='margin-left:1em;'>Email</label>
+              <input name="email" placeholder="Your Email" type="text" id='email'>
+            </div>
+            <div class="field">
+                  <label style='margin-left:1em;'>I want prompts for</label>
+                  <div class="ui selection dropdown">
+                      <input name="track" type="hidden">
+                      <i class="dropdown icon"></i>
+                      <div class="default text">Select One</div>
+                      <div class="menu">
+                          <div class="item" data-value="0">Creative Writing</div>
+                          <div class="item" data-value="1">Journalistic Writing</div>
+                          <div class="item" data-value="2">Professional Writing</div>
+                      </div>
+                  </div>
+              </div>
+            <center>
+            <p style='color:#aaa;'>Finish signing up with Medium.com.</p>
+            <button class="ui large  button blue" ype="submit" style='text-align:center'>Continue</button>
+          </center>
+          </form>
+        </div></center>
+      </div>
+    </div>
+
   </div>
 
 
-  <div class="ui container">
+  <div class=" padded ui container" id='about'>
+    <p class='heading'>Build up your writing skills with prompts tailored to <b>your interests.</b>
+      <br>
+    <div class="ui three column doubling stackable grid container">
+      <div class="column" style='text-align:center'>
+        <img class='svg' src='img/wd_team.svg'>
+        <p style='font-size: 1.5em;'>Choose your custom track.</p>
+      </div>
+      <div class="column" style='text-align:center'>
+        <img class='svg' src='img/wd_email.svg'>
+        <p style='font-size: 1.5em;'>Get daily email reminders with custom prompts. </p>
+      </div>
+      <div class="column" style='text-align:center'>
+        <img class='svg' src='img/wd_writing.svg'>
+        <p style='font-size: 1.5em;'>Write in Medium, and share your work it keep it just for you! </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="top padding padded ui container" id='publications'>
+    <p class='heading'>Choose <b>your </b>track. And <b>share!</b>
+      <br>
+    <div class="ui three column doubling stackable grid container">
+      <div class="column" style='text-align:center'>
+        <img class='svg' src='img/wd_creative_minimal.svg' style='width:70%'>
+        <p style='font-size: 1.5em;'>Fiction and Story-telling.</p>
+        <button class="ui large  button blue">Go To Blog</button>
+      </div>
+      <div class="column" style='text-align:center'>
+        <img class='svg' src='img/wd_journalistic_minimal.svg' style='width:70%'>
+        <p style='font-size: 1.5em;'>Journalism and Opinion Pieces.</p>
+        <a href='https://medium.com/writedaily-journalism'><button class="ui large  button blue">Go To Blog</button></a>
+      </div>
+      <div class="column" style='text-align:center'>
+        <img class='svg' src='img/wd_professional_minimal.svg' style='width:70%'>
+        <p style='font-size: 1.5em;'>Email and Everyday Life.</p>
+        <a href='https://medium.com/writedaily-professional'><button class="ui large  button blue">Go To Blog</button></a>
+      </div>
+    </div>
+  </div>
 
 
+  <div class='footer text-muted' style='margin-left:20%;margin-right:20%;margin-bottom:1rem;'>
+    <hr class='divider'>
+    <p style='float:right; font-size:.8rem;'>© WriteDaily 2018</p>
+    <br>
   </div>
   <!-- END MAIN -->
   <!-- SCRIPTS -->
@@ -123,6 +119,32 @@ svg path {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js"></script>
   <script src='js/scripts.js'></script>
+  <script>
+    $('.dropdown').dropdown();
+
+    $("#pub-button").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#publications").offset().top
+      }, 500);
+    });
+    $("#about-button").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#about").offset().top
+      }, 500);
+    });
+    $("#hero-button").click(function() {
+      $('html, body').animate({
+          scrollTop: 0
+      }, 500);
+    });
+
+    $('#signup').on("click", function(e) {
+      $('html, body').animate({
+          scrollTop:0
+      }, 250);
+       $("#email").focus();
+    })
+  </script>
 </body>
 
 </html>
