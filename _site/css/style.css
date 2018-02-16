@@ -58,7 +58,15 @@ margin: 20px 0;
   padding-left: 10px;
 }
 .ui.container.padded{
-  padding-top:25vh;
+  padding-top:10em;
+  padding-bottom:10em;
+}
+
+.ui.container.unpad.bottom{
+  padding-bottom:5em;
+}
+.illustration{
+  width:85%;
 }
 
 .pad-sides{
@@ -88,6 +96,10 @@ background-image: linear-gradient(160deg, var(--color1) 0%, var(--color2) 100%);
 
 svg path {
   fill:#0093E9
+}
+
+svg .illustration path {
+  fill:white;
 }
 
 .hero {

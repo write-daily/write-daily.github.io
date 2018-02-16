@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+    <head>
+      <title>WriteDaily</title>
+      <link rel="icon" type="image/png" href="/img/wd_logo.png">
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.css">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="/css/style.css">
+    </head>
+        <script>
+        //Fixes FOUC on firefox. Source: Paul Irish! (https://www.paulirish.com/2009/fighting-the-font-face-fout/#defeatthefout)
+        (function(){
+          // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
+          var d = document, e = d.documentElement, s = d.createElement('style');
+          if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
+            s.textContent = 'body{visibility:hidden}';
+            var r = document.getElementsByTagName('script')[0];
+            r.parentNode.insertBefore(s, r);
+            function f(){ s.parentNode && s.parentNode.removeChild(s); }
+            addEventListener('load',f,false);
+            setTimeout(f,3000);
+          }
+        })();
+
+        </script>
+  </head>
+
+
+
+
+
+  <body>
+      <!-- MAIN MENU -->
+  <div class="top padding ui fixed borderless main menu bar">
+    <div class=" ui container" style='padding-top:10px;padding-bottom:10px;'>
+      <a id='hero-button' href="/" class=" item"> Go Back</a>
+    </div>
+  </div>
+
+
+  <div class="hero bg-gradient" style='margin-top:50px' id='hero'>
+        <div class='center-justify'>
+          <img src='/img/medium_white.png' style='height:130px;'>
+        <h1 class='header'>Why Medium?</h1></div>
+
+
+  </div>
+
+
+  <div class="ui container" style='margin-top:50px;text-align:center; font-color:black;'>
+    <p style='font-size:1.5em'>We love Medium, and we think you will too. It's a platform for writers to write, read, and share stories.
+    We make sure all of your posts through our prompts are <b><i>private by default</i></b> so you only share your work if you want to.
+    Learn more about Medium <a href='https://medium.com/about'>here</a>.</p>
+
+  </div>
+  <div class="ui container" style='margin-top:50px;text-align:center; font-color:black;'>
+    <center>
+      <p style='font-size:1.5em'><b>Get Signed Up!</b></p>
+    <div class="ui card" style='text-align:left;'>
+      <form class="ui form" style='margin:10px;' id='signup-form'>
+        <div class="field">
+          <label style='margin-left:1em;'>Email</label>
+          <input name="email" placeholder="Your Email" type="text" id='email'>
+        </div>
+        <div class="field">
+              <label style='margin-left:1em;'>I want prompts for</label>
+              <div class="ui selection dropdown">
+                  <input name="track" type="hidden">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Select One</div>
+                  <div class="menu">
+                      <div class="item" data-value="0">Creative Writing</div>
+                      <div class="item" data-value="1">Journalistic Writing</div>
+                      <div class="item" data-value="2">Professional Writing</div>
+                  </div>
+              </div>
+          </div>
+        <center>
+        <p style='color:#aaa;'>Finish signing up with Medium.com. <br style='line-height:0px;'><a href='/why-medium'>Why Medium?</a></p>
+        <button class="ui large  button blue" ype="submit" style='text-align:center'>Continue</button>
+      </center>
+      </form>
+    </div></center>
+
+  </div>
+
+  <div class='footer text-muted' style='margin-left:20%;margin-right:20%;margin-bottom:1rem;'>
+    <hr class='divider'>
+    <p style='float:right; font-size:.8rem;'>© WriteDaily 2018</p>
+    <br>
+  </div>
+
+
+    <!--script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src='/js/scripts.js'></script>
+  </body>
+
+</html>

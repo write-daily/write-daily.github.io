@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>WriteDaily</title>
-  <link rel="icon" type="image/png" href="/img/wd_logo.png">
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-
-<body>
+---
+layout: default
+---
   <!-- MAIN MENU -->
   <div class="top padding ui fixed borderless main menu bar">
     <div class=" ui container" style='padding-top:10px;padding-bottom:10px;'>
       <div id='hero-button' href="#" class="header name item"> WriteDaily</div>
       <div id='about-button' class="item">About</div>
-      <div id='pub-button' href="#" class="item" open>Publications</div>
+      <div id='pub-button' href="#" class="item" open>Blogs</div>
       <!-- DROPDOWN -->
       <div class="right menu">
         <a href="#" class="item" id='signup'>Sign up</a>
@@ -55,7 +46,7 @@
                   </div>
               </div>
             <center>
-            <p style='color:#aaa;'>Finish signing up with Medium.com.</p>
+            <p style='color:#aaa;'>Finish signing up with Medium.com. <br style='line-height:0px;'><a href='/why-medium'>Why Medium?</a></p>
             <button class="ui large  button blue" ype="submit" style='text-align:center'>Continue</button>
           </center>
           </form>
@@ -66,41 +57,44 @@
   </div>
 
 
-  <div class=" padded ui container" id='about'>
+  <div class=" padded ui container unpad bottom" id='about'>
     <p class='heading'>Build up your writing skills with prompts tailored to <b>your interests.</b>
       <br>
     <div class="ui three column doubling stackable grid container">
       <div class="column" style='text-align:center'>
-        <img class='svg' src='img/wd_team.svg'>
+        <img class='svg' src='img/wd_team.svg' style='width:85%'>
         <p style='font-size: 1.5em;'>Choose your custom track.</p>
       </div>
       <div class="column" style='text-align:center'>
-        <img class='svg' src='img/wd_email.svg'>
+        <img class='svg' src='img/wd_email.svg' style='width:85%'>
         <p style='font-size: 1.5em;'>Get daily email reminders with custom prompts. </p>
       </div>
       <div class="column" style='text-align:center'>
-        <img class='svg' src='img/wd_writing.svg'>
-        <p style='font-size: 1.5em;'>Write in Medium, and share your work it keep it just for you! </p>
+        <img class='svg' src='img/wd_writing.svg' style='width:85%'>
+        <p style='font-size: 1.5em;'>Write in Medium, and share your work- or keep it just for you! </p>
       </div>
     </div>
   </div>
 
-  <div class="top padding padded ui container" id='publications'>
+  <div class="padded ui container " id='publications'>
     <p class='heading'>Choose <b>your </b>track. And <b>share!</b>
       <br>
     <div class="ui three column doubling stackable grid container">
       <div class="column" style='text-align:center'>
-        <img class='svg' src='img/wd_creative_minimal.svg' style='width:70%'>
+        <img class='svg' src='img/illustration_creative.svg' style='width:85%'>
+        <p style='font-size: 1.5em;font-weight:bold;margin:0px;padding:0px'>Creative</p>
         <p style='font-size: 1.5em;'>Fiction and Story-telling.</p>
-        <button class="ui large  button blue">Go To Blog</button>
+        <a href='https://medium.com/writedaily-creative'><button class="ui large  button blue">Go To Blog</button></a>
       </div>
       <div class="column" style='text-align:center'>
-        <img class='svg' src='img/wd_journalistic_minimal.svg' style='width:70%'>
+        <img class='svg' src='img/illustration_journalism.svg' style='width:85%'>
+        <p style='font-size: 1.5em;font-weight:bold;margin:0px;padding:0px'>Journalistic</p>
         <p style='font-size: 1.5em;'>Journalism and Opinion Pieces.</p>
         <a href='https://medium.com/writedaily-journalism'><button class="ui large  button blue">Go To Blog</button></a>
       </div>
       <div class="column" style='text-align:center'>
-        <img class='svg' src='img/wd_professional_minimal.svg' style='width:70%'>
+        <img class='svg' src='img/illustration_professional.svg' style='width:85%'>
+        <p style='font-size: 1.5em;font-weight:bold;margin:0px;padding:0px'>Professional</p>
         <p style='font-size: 1.5em;'>Email and Everyday Life.</p>
         <a href='https://medium.com/writedaily-professional'><button class="ui large  button blue">Go To Blog</button></a>
       </div>
@@ -118,7 +112,6 @@
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js"></script>
-  <script src='js/scripts.js'></script>
   <script>
     $('.dropdown').dropdown();
 
@@ -139,9 +132,9 @@
     });
 
     $('#signup').on("click", function(e) {
-      $('html, body').animate({
+      /*$('html, body').animate({
           scrollTop:0
-      }, 250);
+      }, 250);*/
        $("#email").focus();
     })
   </script>
