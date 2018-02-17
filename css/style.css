@@ -65,6 +65,8 @@ margin: 20px 0;
 .ui.container.unpad.bottom{
   padding-bottom:5em;
 }
+
+
 .illustration{
   width:85%;
 }
@@ -146,5 +148,9 @@ margin-top: 20px;
   }
   .extra-padding{
     margin-top:10em;
+  }
+  .ui.container.bottom-container{
+    margin-bottom:0px;
+    padding-bottom: 2em;
   }
 }
