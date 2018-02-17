@@ -144,4 +144,7 @@ margin-top: 20px;
   .mobile-margin{
     margin-bottom: 10%;
   }
+  .extra-padding{
+    margin-top:10em;
+  }
 }
