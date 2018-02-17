@@ -8,7 +8,165 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.css">
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-      <link rel="stylesheet" href="/css/style.css">
+      <style>
+          @import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+          :root{
+            --color1:#0093E9;
+            --color2:#80D0C7;
+          }
+          body {
+          background-color: #FFFFFF;
+          }
+          .text-muted{
+            color:#999;
+          }
+          .center-justify{
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-align-items: center;
+            -webkit-flex-direction: column;
+            -webkit-font-smoothing: antialiased;
+            -webkit-justify-content: center;
+            display: -webkit-flex;
+          }
+          .divider{
+            display: block;
+              height: 1px;
+              border: 0;
+              border-top: 1px solid #ccc;
+              margin: 1em 0;
+              padding: 0;
+          }
+          .top.padding {
+          margin-top: 2rem;
+          }
+
+          .main.menu {
+          margin-top: 4em;
+          border-radius: 0;
+          border: none;
+          box-shadow: none;
+          transition: box-shadow 0.5s ease, padding 0.5s ease;
+          }
+
+          .main.menu.fixed {
+          background-color: #FFFFFF;
+          border: 1px solid #DDD;
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+          }
+
+          .header.name.item {
+          padding-left: 20px;
+          }
+
+          .break {
+          margin: 50px 0;
+          }
+
+          .break.twenty {
+          margin: 20px 0;
+          }
+          .ui.container{
+            padding-left: 10px;
+          }
+          .ui.container.padded{
+            padding-top:10em;
+            padding-bottom:10em;
+          }
+
+          .ui.container.unpad.bottom{
+            padding-bottom:5em;
+          }
+
+
+          .illustration{
+            width:85%;
+          }
+
+          .pad-sides{
+            padding-left:18%;
+            padding-right:18%;
+          }
+
+          @media only screen and (max-width: 768px) {
+            .pad-sides{
+              padding-left:5%;
+              padding-right:5%;
+            }
+          }
+          .footer{
+            padding-top:12vh;
+          }
+          .heading{
+            font-size:2rem;
+            text-align:center
+          }
+          .bg-gradient{
+          background-image: -webkit-linear-gradient(160deg, var(--color1) 0%, var(--color2) 100%);
+          background-image: -moz-linear-gradient(160deg, var(--color1) 0%, var(--color2) 100%);
+          background-image: -o-linear-gradient(160deg, var(--color1) 0%, var(--color2) 100%);
+          background-image: linear-gradient(160deg, var(--color1) 0%, var(--color2) 100%);
+          }
+
+          svg path {
+            fill:#0093E9
+          }
+
+          svg .illustration path {
+            fill:white;
+          }
+
+          .hero {
+          width: 100%;
+          height: 400px;
+          background-color: #0093E9;
+
+          background-size: cover;
+          font-family: 'Lora', serif !important;
+          color: white;
+          text-align: center;
+          padding-top: 90px;
+          }
+
+          .hero .header {
+          font-weight: bold;
+          font-size: 3rem;
+          }
+
+          .hero .caption {
+          font-size: 20px;
+          margin-top: 20px;
+          width: 50%;
+          margin-left:auto;
+          margin-right:auto;
+          }
+
+          .hero.ui.button {
+          margin-top: 20px;
+          }
+
+          .button.blue{background-color:#0093E9;color:white;border-radius: 500px;}
+
+          .footer{
+
+            margin-top:-80px;
+          }
+          @media only screen and (max-width: 768px) {
+            .footer{
+              margin-top: -10px;
+            }
+            .mobile-margin{
+              margin-bottom: 10%;
+            }
+            .extra-padding{
+              margin-top:13em;
+            }
+            .ui.container.bottom-container{
+              margin-bottom:0px;
+              padding-bottom: 2em;
+            }
+          }
+
+      </style>
     </head>
         <script>
         //Fixes FOUC on firefox. Source: Paul Irish! (https://www.paulirish.com/2009/fighting-the-font-face-fout/#defeatthefout)
@@ -174,17 +332,38 @@
        $("#name").focus();
     })
   </script>
-</body>
-
-</html>
 
 
     <!--script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script src='/js/scripts.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        /*Must Wrap within a <script> tag*/
+        $(document).ready(function() {
+            $('img[src$=".svg"]').each(function() {
+                var $img = jQuery(this);
+                var imgURL = $img.attr('src');
+                var attributes = $img.prop("attributes");
+
+                $.get(imgURL, function(data) {
+                    // Get the SVG tag, ignore the rest
+                    var $svg = jQuery(data).find('svg');
+
+                    // Remove any invalid XML tags
+                    $svg = $svg.removeAttr('xmlns:a');
+
+                    // Loop through IMG attributes and apply on SVG
+                    $.each(attributes, function() {
+                        $svg.attr(this.name, this.value);
+                    });
+
+                    // Replace IMG with SVG
+                    $img.replaceWith($svg);
+                }, 'xml');
+            });
+        });
+
+    </script>
   </body>
 
 </html>
