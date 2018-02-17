@@ -132,3 +132,16 @@ margin-top: 20px;
 }
 
 .button.blue{background-color:#0093E9;color:white;border-radius: 500px;}
+
+.footer{
+
+  margin-top:-80px;
+}
+@media only screen and (max-width: 768px) {
+  .footer{
+    margin-top: -10px;
+  }
+  .mobile-margin{
+    margin-bottom: 10%;
+  }
+}
