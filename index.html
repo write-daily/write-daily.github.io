@@ -21,17 +21,13 @@ layout: default
       <div class="column" style='text-align:center'>
         <div class='center-justify'>
         <div><h1 class='header'>Make writing a habit</h1></div>
-        <div class="caption">Join hundreds of other writers on a <b>7</b> day challenge to write to a prompt every day. </div>
+        <div class="caption"><p>Join other writers on a <b>7</b> day challenge to write to a prompt every day.</p> </div>
       </div>
       </div>
       <div class="column" style='text-align:left;'>
         <center>
         <div class="ui card" style='text-align:left;'>
           <form class="ui form" style='margin:10px;' id='signup-form'>
-            <div class="field">
-              <label style='margin-left:1em;'>Name</label>
-              <input name="name" placeholder="Your Name" type="text" id='name'>
-            </div>
             <div class="field">
               <label style='margin-left:1em;'>Email</label>
               <input name="email" placeholder="Your Email" type="text" id='email'>
@@ -50,7 +46,7 @@ layout: default
                   </div>
               </div>
             <center>
-            <p style='color:#aaa;'>Finish signing up with Medium.com. <br style='line-height:0px;'><a href='/why-medium'>Why Medium?</a></p>
+            <p style='color:#aaa;'>Finish signing up with Medium.com. <!--<br style='line-height:0px;'><a href='/why-medium'>Why Medium?</a --></p>
             <button class="ui large  button blue" type="submit" style='text-align:center'>Continue</button>
           </center>
           </form>
@@ -88,21 +84,28 @@ layout: default
         <img class='svg' src='img/illustration_creative.svg' style='width:85%'>
         <p style='font-size: 1.5em;font-weight:bold;margin:0px;padding:0px'>Creative</p>
         <p style='font-size: 1.5em;'>Fiction and Story-telling.</p>
-        <a href='https://medium.com/writedaily-creative'><button class="ui large  button blue">Go To Blog</button></a>
+
       </div>
       <div class="column" style='text-align:center'>
         <img class='svg' src='img/illustration_journalism.svg' style='width:85%'>
         <p style='font-size: 1.5em;font-weight:bold;margin:0px;padding:0px'>Journalistic</p>
         <p style='font-size: 1.5em;'>Journalism and Opinion Pieces.</p>
-        <a href='https://medium.com/writedaily-journalism'><button class="ui large  button blue">Go To Blog</button></a>
+
       </div>
       <div class="column" style='text-align:center'>
         <img class='svg' src='img/illustration_professional.svg' style='width:85%'>
         <p style='font-size: 1.5em;font-weight:bold;margin:0px;padding:0px'>Professional</p>
         <p style='font-size: 1.5em;'>Email and Everyday Life.</p>
-        <a href='https://medium.com/writedaily-professional'><button class="ui large  button blue">Go To Blog</button></a>
+
       </div>
+
+
+
     </div>
+    <center>
+      <br style='line-height:2em'>
+      <a href='https://medium.com/search/tags?q=writedaily'><button class="ui large  button blue">See Work</button></a>
+    </center>
   </div>
 
 
@@ -139,6 +142,6 @@ layout: default
       /*$('html, body').animate({
           scrollTop:0
       }, 250);*/
-       $("#name").focus();
+       $("#email").focus();
     })
   </script>
